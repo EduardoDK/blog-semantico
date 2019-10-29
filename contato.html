@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+     a{
+        text-decoration:none;
+        padding:30px;
+        font-family:arial;
+        font-size:17px;
+        color:white;
+    }
+    a:hover{
+        font-size:21px;
+    }
+    h1{
+        text-align:center;
+        font-size:50px;
+        font-family:arial;
+        color:white;
+    }
+    h2{
+        text-align:center;
+        font-family:arial;
+        font-size:35px;
+    }
+    body{
+        background:rgb(206, 74, 74);
+
+    }
+    main{
+        background:white;
+    }
+    #cab{
+        color:white;
+        text-align:center;
+    }
+    nav{
+        background:rgb(206, 74, 74);
+        padding:20px;
+    }
+    form{
+            width:550px;
+            margin: auto;
+           
+            padding: 1em;
+        }
+        form div{
+            margin-top: 1em;
+        }
+        label{
+            display: inline-block;
+            width:100px;
+            text-align: right;
+        }
+        input,textarea{
+            width: 400px;
+            border: 1px #ccc;
+            background-color: rgb(250,128,114,0.2);
+            height:30px;
+            border-radius: 5px;
+        }
+      
+        textarea{
+           
+            height:80px;
+            vertical-align: top;
+        }
+        button{
+            background-color: salmon;
+            border:none;
+            margin-left:100px;
+            padding: 10;
+        }
+</style>
+<body>
+  
+        <header>
+                <h1>Por que assistir ?</h1>
+                <a name="topo"></a>
+                <p id="cab">O blog que te indica os melhores conteudos de animes series e filmes.</p>
+        
+            </header>
+            <nav>
+                <a href="blog.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="cadastro.html">Cadastrar</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+    
+</body>
+<main>
+    <form action="">
+    <div>
+        <label for="emailForm">Seu email:</label>
+        <input type="email" id="emailForm" required>
+    </div>
+    <div>
+        <label for="navegadoresForm">Assunto:</label>
+        <input list="navegadores" name="navegador" required>
+        <datalist id="navegadores">
+        <option value="Denuncia de abuso">
+        <option value="Problemas no site">
+        <option value="Falta de contéudo">
+        <option value="Sugestões">
+        </datalist>
+    </div>
+    <div>
+        <label for="comentarioForm">Seu Texto:</label>
+        <textarea name="comentario" id="comentarioForm" required ></textarea>
+    </div>
+    <div>
+        <button type="submit">Enviar</button>
+    </div>
+    </form>
+</main>
+</html>

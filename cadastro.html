@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+     a{
+        text-decoration:none;
+        padding:30px;
+        font-family:arial;
+        font-size:17px;
+        color:white;
+    }
+    a:hover{
+        font-size:21px;
+    }
+    h1{
+        text-align:center;
+        font-size:50px;
+        font-family:arial;
+        color:white;
+    }
+    h2{
+        text-align:center;
+        font-family:arial;
+        font-size:35px;
+    }
+    body{
+        background:rgb(206, 74, 74);
+
+    }
+    main{
+        background:white;
+    }
+    #cab{
+        color:white;
+        text-align:center;
+    }
+    nav{
+        background:rgb(206, 74, 74);
+        padding:20px;
+    }
+    
+    form{
+            width:550px;
+            margin: auto;
+           
+            padding: 1em;
+        }
+        form div{
+            margin-top: 1em;
+        }
+        label{
+            display: inline-block;
+            width:100px;
+            text-align: right;
+        }
+        input,textarea{
+            width: 400px;
+            border: 1px #ccc;
+            background-color: rgb(250,128,114,0.2);
+            height:30px;
+            border-radius: 5px;
+        }
+      
+        textarea{
+           
+            height:80px;
+            vertical-align: top;
+        }
+        button{
+            background-color: salmon;
+            border:none;
+            margin-left:100px;
+            padding: 10px 185px;
+        }
+    
+</style>
+<body>
+  
+        <header>
+                <h1>Por que assistir ?</h1>
+                <a name="topo"></a>
+                <p id="cab">O blog que te indica os melhores conteudos de animes series e filmes.</p>
+        
+            </header>
+            <nav>
+                <a href="blog.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="cadastro.html">Cadastrar</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+    
+</body>
+<main>
+        <form action="">
+                <div>
+                <label for="nomeCompleto">Seu nome:</label>
+                <input type="text" id="nomeCompleto" placeholder="Informe seu nome completo" name="nome" required>
+                </div>
+                <div >
+                     <label for="emailForm">Email:</label>
+                     <input type="email" id="emailForm" placeholder=" Seu email" name="email" required>
+                </div>
+                <div>
+                <label for="idadeUsuario">Idade:</label>
+                <input type="number" name="numero1" min="1" max="99" id="idadeUsuario" placeholder="0">
+                </div>
+                <div>
+                    <label for="usuarioForm">Usuario:</label>
+                    <input type="text" id="usuarioForm" placeholder=" Usuario" name="nome" required>
+                </div>
+                <div>
+                    <label for="sobrenomeForm">Senha:</label>
+                    <input type="password" id="passwordForm" placeholder=" Senha" name="sobrenome" required>
+                </div>
+                <div>
+                    <label for="sobrenomeForm">Repita a senha:</label>
+                    <input type="password" id="passwordForm" placeholder=" Senha" name="sobrenome" required>
+                </div>
+               
+                <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+            </form>
+</main>
+</html>
